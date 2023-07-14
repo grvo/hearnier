@@ -10,9 +10,11 @@ var remote = require('gulp-remote-src');
 var rename = require('gulp-rename');
 var zip = require('gulp-vinyl-zip');
 var bom = require('gulp-bom');
+var sourcemaps = require('gulp-sourcemaps');
 
 var es = require('event-stream');
 var path = require('path');
+var _ = require('underscore');
 
 // variáveis locais
 var watch = require('./build/lib/watch');
