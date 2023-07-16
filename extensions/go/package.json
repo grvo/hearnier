@@ -1,0 +1,35 @@
+{
+    "name": "go",
+    "version": "0.1.0",
+    "publisher": "hearnier",
+
+    "engines": {
+        "vscode": "*"
+    },
+
+    "contributes": {
+        "languages": [
+            {
+                "id": "go",
+
+                "extensions": [
+                    ".go"
+                ],
+
+                "aliases": [
+                    "go"
+                ],
+
+                "configuration": "./go.configuration.json"
+            }
+        ],
+
+        "grammars": [
+            {
+                "language": "go",
+                "scopeName": "source.go",
+                "path": "./syntaxes/go.json"
+            }
+        ]
+    }
+}
