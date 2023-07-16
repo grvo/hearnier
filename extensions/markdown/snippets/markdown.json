@@ -1,0 +1,95 @@
+{
+    "inserir texto em negrito": {
+        "prefix": "bold",
+        "body": "**${text}**${}",
+
+        "description": "inserir texto em negrito"
+    },
+
+    "inserir texto em itálico": {
+        "prefix": "italic",
+        "body": "*${text}*${}",
+
+        "description": "inserir texto em itálico"
+    },
+
+    "inserir texto citado": {
+        "prefix": "quote",
+        "body": "> ${text}",
+
+        "description": "inserir texto citado"
+    },
+
+    "inserir bloco de código": {
+        "prefix": "code",
+        "body": "`${text}`${}",
+
+        "description": "inserir bloco de código"
+    },
+
+    "inserir bloco de código cercado": {
+        "prefix": "fenced codeblock",
+
+        "body": [
+            "```${language}",
+            "$0",
+            "```"
+        ],
+
+        "description": "inserir bloco de código cercado"
+    },
+
+    "inserir cabeçalho": {
+        "prefix": "heading",
+        "body": "# ${text}",
+
+        "description": "inserir cabeçalho"
+    },
+
+    "inserir lista não-ordenada": {
+		"prefix": "unordered list",
+
+		"body": [
+			"- ${first}",
+			"- ${second}",
+			"- ${third}",
+			"$0"
+		],
+
+		"description": "inserir lista não-ordenada"
+	},
+
+	"inserir lista ordenada": {
+		"prefix": "ordered list",
+
+		"body": [
+			"1. ${first}",
+			"2. ${second}",
+			"3. ${third}",
+			"$0"
+		],
+
+		"description": "inserir lista ordenada"
+	},
+
+    "inserir regra horizontal": {
+		"prefix": "horizontal rule",
+		"body": "----------\n",
+
+		"description": "inserir regra horizontal"
+	},
+
+	"inserir link": {
+		"prefix": "link",
+		"body": "[${text}](http://${link})$0",
+
+		"description": "inserir link"
+	},
+
+	"inserir imagem" : {
+		"prefix": "image",
+		"body": "![${alt}](http://${link})$0",
+
+		"description": "inserir imagem"
+	}
+}

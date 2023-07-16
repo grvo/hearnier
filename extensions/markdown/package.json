@@ -1,0 +1,18 @@
+{
+    "name": "markdown",
+    "version": "0.1.0",
+    "publisher": "hearnier",
+
+    "engines": {
+        "vscode": "*"
+    },
+
+    "contributes": {
+        "snippets": [
+            {
+                "language": "markdown",
+                "path": "./snippets/markdown.json"
+            }
+        ]
+    }
+}
