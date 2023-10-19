@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES5",
+
+		"preserveConstEnums": true,
+		"experimentalDecorators": true,
+		"noLib": true,
+		
+		"noImplicitAny": false,
+		"removeComments": false,
+		"sourceMap": false
+	}
+}
