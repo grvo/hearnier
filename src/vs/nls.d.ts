@@ -4,15 +4,15 @@ export interface ILocalizeInfo {
 }
 
 export declare function localize(
-    info:ILocalizeInfo,
-    message:string, 
+    info: ILocalizeInfo,
+    message: string, 
     
-    ...args:any[]
-):string;
+    ...args: any[]
+): string;
 
 export declare function localize(
-    key:string,
-    message:string,
+    key: string,
+    message: string,
     
-    ...args:any[]
-):string;
+    ...args: any[]
+): string;
