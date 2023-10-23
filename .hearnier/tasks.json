@@ -1,0 +1,47 @@
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+
+    "tasks": [
+        {
+            "taskName": "watch",
+
+            "args": [
+                "--no-color"
+            ],
+
+            "isBuildCommand": true,
+            "isWatching": true,
+
+            "problemMatcher": {
+                "owner": "typescript",
+                "fileLocation": ["absolute"],
+
+                "pattern": {
+                    "regexp": "^\\*\\*\\* erro: ([^(]+)\\((\\d+|\\d+,\\d+|\\d+,\\d+,\\d+,\\d+)\\): (.*)$",
+                    
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                },
+
+                "watching": {
+                    "beginsPattern": "^\\*\\*\\* iniciando\\.\\.\\.$",
+                    "endsPattern": "^\\*\\*\\* finalizado"
+                }
+            }
+        },
+
+        {
+            "taskName": "test",
+
+            "args": [
+                "--no-color"
+            ],
+
+            "showOutput": "always",
+            "isTestCommand": true
+        }
+    ]
+}
